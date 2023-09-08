@@ -1,7 +1,7 @@
 /*
   118. Pascal's Triangle
-  Leet Code Link : https://leetcode.com/problems/pascals-triangle/
-  Company Asked : Adove, Amazone
+  Leet Code Link: https://leetcode.com/problems/pascals-triangle/
+  Company Asked: Adove, Amazone
   T.C : O(n^2)
 */
 
@@ -17,5 +17,3 @@
     }
      return result;
 };
-
-
