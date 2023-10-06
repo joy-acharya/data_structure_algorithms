@@ -2,13 +2,9 @@
   343. Integer Break
   Leet Code Link : https://leetcode.com/problems/integer-break/
   Company Asked : Amazon
-  T.C : O(n^2)
 */
 
-/**
- * @param {number} n
- * @return {number}
- */
+/* Approach 1: T.C : O(n^2) */
 var integerBreak = function(n) {
     let dp = new Array(n+1).fill(-1);
     return solve(n, dp);
@@ -27,3 +23,20 @@ var solve = function(n, dp) {
     }
     return dp[n] = result;
 }
+
+/*Approach 2: T.C : O(n) */
+
+
+var integerBreak = function(n) {
+        if (n <= 3) {
+            return n - 1;
+        }
+        
+        let ans = 1;
+        while (n > 4) {
+            ans *= 3;
+            n -= 3;
+        }
+        
+        return ans * n;
+};
