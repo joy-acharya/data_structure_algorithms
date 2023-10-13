@@ -1,14 +1,10 @@
 /*
   746. Min Cost Climbing Stairs
-  Leet Code Link : https://leetcode.com/problems/min-cost-climbing-stairs/
-  
+  Leet Code Link: https://leetcode.com/problems/min-cost-climbing-stairs/
+  Company Asked: Google
+  T.C: O(n)
 */
 
-
-/**
- * @param {number[]} cost
- * @return {number}
- */
 var minCostClimbingStairs = function(cost) {
     let dp = new Array(cost.length + 1).fill(-1);
     return solve(cost, 0, dp);
@@ -20,7 +16,7 @@ var solve = function(cost, i, dp) {
     if(dp[i] != -1)
         return dp[i];
     
-    let take_i = cost[i] + solve(cost,i+1, dp);
-    let take_i_plus = cost[i+1] + solve(cost,i+2, dp);
-    return dp[i] = Math.min(take_i,take_i_plus);
+    let take_i_plus_one = cost[i] + solve(cost,i+1, dp);
+    let take_i_plus_two = cost[i+1] + solve(cost,i+2, dp);
+    return dp[i] = Math.min(take_i_plus_one,take_i_plus_two);
 }
