@@ -1,7 +1,11 @@
 /*
   678. Valid Parenthesis String
-  Leet Code Link : https://leetcode.com/problems/valid-parenthesis-string/
+  LeetCode Link: https://leetcode.com/problems/valid-parenthesis-string
+  T.C: O(n*n)
+  S.C: O(n*n)
+  Asked By: Meta
 */
+
 
 
 /**
