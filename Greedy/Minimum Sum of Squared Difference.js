@@ -1,8 +1,9 @@
 /*
   2333. Minimum Sum of Squared Difference
-  LeetCode Link: https://leetcode.com/problems/minimum-sum-of-squared-difference
-  T.C: O(n+10^5);
-  S.C: O(10^5)
+  LeetCode Link : https://leetcode.com/problems/minimum-sum-of-squared-difference
+  My Profile    : https://leetcode.com/u/acharya007
+  T.C           : O(n+10^5);
+  S.C           : O(10^5)
 */
 
 /**
